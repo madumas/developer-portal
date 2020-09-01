@@ -1,4 +1,6 @@
 const path = require('path');
+require('dotenv').config();
+
 // const slug = require('remark-slug');
 // const mdxTableOfContents = require('./lib/toc-module');
 
@@ -28,6 +30,11 @@ const path = require('path');
 
 module.exports = {
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdx'],
+  env: {
+    GITHUB_CLIENT_ID: process.env.GITHUB_CLIENT_ID,
+    REPO_FULL_NAME: process.env.REPO_FULL_NAME,
+    BASE_BRANCH: process.env.BASE_BRANCH,
+  },
   webpack: (config, options) => {
     config.module.rules.push({
       test: /\.(md|mdx)$/,
