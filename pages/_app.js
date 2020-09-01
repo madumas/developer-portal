@@ -56,26 +56,23 @@ const MyApp = ({ Component, pageProps, content }) => {
     });
   };
 
-  const cms = new TinaCMS({
+  const tinaConfig = {
     enabled: !!pageProps.preview,
     apis: {
-      /**
-       * 2. Register the GithubClient
-       */
       github: new GithubClient({
         proxy: '/api/proxy-github',
         authCallbackRoute: '/api/create-github-access-token',
         clientId: process.env.GITHUB_CLIENT_ID,
-        baseRepoFullName: process.env.REPO_FULL_NAME, // e.g: tinacms/tinacms.org,
+        baseRepoFullName: process.env.REPO_FULL_NAME,
         authScope: 'repo', // for private repos, normally defaults to 'public_repo'
+        baseBranch: process.env.BASE_BRANCH,
       }),
     },
-    /**
-     * 3. Use the Sidebar and Toolbar
-     */
     sidebar: pageProps.preview,
     toolbar: pageProps.preview,
-  });
+  };
+
+  const cms = React.useMemo(() => new TinaCMS(tinaConfig), [tinaConfig]);
 
   return (
     <ThemeProvider theme={theme} components={components}>
