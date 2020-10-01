@@ -2,16 +2,6 @@
   "navItems": [
     {
       "type": "link",
-      "id": "1",
-      "position": 0,
-      "url": "/documentation/introduction-to-rates-module",
-      "slug": "dsr",
-      "key": "dsr",
-      "name": "DSR",
-      "children": []
-    },
-    {
-      "type": "link",
       "id": "2",
       "position": 1,
       "url": "/auctions",
@@ -22,12 +12,22 @@
     },
     {
       "type": "link",
+      "id": "1",
+      "position": 0,
+      "url": "/documentation/introduction-to-rates-module",
+      "slug": "dsr",
+      "key": "dsr",
+      "name": "DSR",
+      "children": []
+    },
+    {
+      "type": "link",
       "id": "3",
       "position": 2,
       "url": "/documentation/introduction-to-governance-module",
       "slug": "governance",
       "key": "governance",
-      "name": "Governance",
+      "name": "Governancey",
       "children": []
     }
   ]
