@@ -2,22 +2,22 @@
   "navItems": [
     {
       "type": "link",
+      "id": "2",
+      "position": 1,
+      "url": "/auctions",
+      "slug": "auctions",
+      "key": "auctions",
+      "name": "Auctionzzz",
+      "children": []
+    },
+    {
+      "type": "link",
       "id": "3",
       "position": 2,
       "url": "/documentation/introduction-to-governance-module",
       "slug": "governance",
       "key": "governance",
       "name": "Governancey",
-      "children": []
-    },
-    {
-      "type": "link",
-      "id": "2",
-      "position": 1,
-      "url": "/auctions",
-      "slug": "auctions",
-      "key": "auctions",
-      "name": "Auctions",
       "children": []
     },
     {
