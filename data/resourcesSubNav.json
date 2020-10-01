@@ -1,43 +1,34 @@
 {
-  "0": {
-    "url": "/documentation/introduction-to-rates-module",
-    "name": "DSR"
-  },
-  "1": {
-    "url": "/auctions",
-    "name": "Auctions"
-  },
-  "2": {
-    "url": "/documentation/introduction-to-governance-module",
-    "name": "Governance"
-  },
-  "3": {
-    "url": "/documentation/introduction-to-dai-js",
-    "name": "Dai.js"
-  },
-  "4": {
-    "url": "/maker-data-api",
-    "name": "Maker Data API"
-  },
-  "5": {
-    "url": "/vaults",
-    "name": "Vaults"
-  },
-  "6": {
-    "url": "/oracles",
-    "name": "Oracles"
-  },
-  "7": {
-    "url": "/dai-ui",
-    "name": "Dai UI"
-  },
   "navItems": [
     {
       "type": "link",
+      "id": "1",
+      "position": 0,
+      "url": "/documentation/introduction-to-rates-module",
       "slug": "dsr",
-      "title": "new slug",
-      "children": [],
-      "id": "9uqffgtxl"
+      "key": "dsr",
+      "name": "DSR",
+      "children": []
+    },
+    {
+      "type": "link",
+      "id": "2",
+      "position": 1,
+      "url": "/auctions",
+      "slug": "auctions",
+      "key": "auctions",
+      "name": "Auctions",
+      "children": []
+    },
+    {
+      "type": "link",
+      "id": "3",
+      "position": 2,
+      "url": "/documentation/introduction-to-governance-module",
+      "slug": "governance",
+      "key": "governance",
+      "name": "Governance",
+      "children": []
     }
   ]
 }
